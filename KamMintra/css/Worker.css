@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body,html{
+
+    width:  100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+
+}
+
+.header{
+    
+    height: 90px;
+    background-color: #273746;
+    
+}
+
+
+.worker{
+    
+    
+    width: 100%;
+    height: 660px;
+    width:  100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.signUP{
+    
+    background-color: #D6EAF8;
+}
+
+
+.signUPTitle{
+    
+    margin-top: 20px;
+}
+
+
+.signINButton{
+    
+      margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
+
+}

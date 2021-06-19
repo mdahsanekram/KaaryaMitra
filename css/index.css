@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+
+.leftnavBar{
+    
+    margin-right: 60px;
+}
+.imageSize{
+    
+    width: 100%;
+    height: 450px;
+}
+
+.craouselSection{
+    
+    background-color: #ECF0F1;
+    height: 630px;
+}
+
+.carouselBar{
+    
+    position: relative;
+}
+
+.locationType{
+    
+    position: absolute;
+    top : 120px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    
+}
+
+.submitButton{
+    
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -20%);
+    
+    border-radius: 20%;
+}
+
+.relationshipWithUser{
+    
+    
+}
+
+
+.textRel{
+    
+    margin-top: 40px;
+}
+
+
+.showWorkfirst{
+    
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.showWork{
+    
+    margin-top: 5%;
+    margin-left: 20%;
+    
+    
+}
+
+.imageShow{
+    
+    height: 10%;
+    width: 13%;
+}
+
+.contactSection{
+    
+    margin-top: 10%;
+}
+
+.mapsectiondiv{
+    
+    margin-top: 2%;
+}
+
+.mapsection{
+    
+    height: 310px;
+    width: 100%;
+    
+}
+
+.addressBar{
+    
+    background-color: #F8F8FF;
+}
+
+
+.address img{
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 140px;
+    width: 200px;
+}
+
+.address p{
+    margin-left: 100px;
+}
+
+.imageserBest{
+    
+    margin-top: 20%;
+    width: 80%;
+    height: 80%;
+}
+
+
+.headingBar{
+    
+    margin-top: 5%;
+}
+
+.bestSer{
+    
+    background-color: #86bff9;
+    height: 90%;
+}
+
+.worktype{
+    
+    background-color: transparent;
+}
+
+
+.navbarLogo{
+    
+    height: 40px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.copyRight{
+    
+    background-color: #181830;
+}
+
+
+
+
+@media only screen and (max-width: 560px){
+    
+    .craouselSection{
+    height: 700px;
+    width: 100%;
+    }
+       
+    .imageSize{
+    
+    width: 100%;
+    height: 450px;
+    }
+    
+    .coausalTagH3{
+        font-size: 22px;
+    }
+    
+    .coausalTagH4{
+        font-size: 20px;
+    }
+    
+    .coausalTagH3sec{
+        
+        font-size: 15px;
+    }
+}

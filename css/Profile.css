@@ -1,0 +1,92 @@
+.bodyFull{
+    
+    background-color: #D6EAF8;
+}
+
+.userProfile{
+    
+    height: 50%;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.imageDiv{
+    
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.setPhoto{
+    
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.addharPass{
+     margin-left: 5%;
+    margin-top: 20px;
+
+}
+
+.smallProfile{
+    margin-left: 10px;
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    
+}
+
+
+table tr td{
+    
+    font-size: 25px;
+}
+
+
+.secondTD{
+    
+    padding-left: 10px;
+}
+
+.middleLogo{
+    
+    height: 45px;
+    width: 50px;
+    margin-left: 45%;
+}
+
+
+
+
+/* media query */
+
+
+
+
+@media only screen and (max-width: 560px){
+   
+    table{
+        
+        margin-left: 5px;
+        margin-top: 20px;
+        
+    }
+    
+    
+    table tr td{
+    
+    font-size: 14px;
+    }
+    
+    .middleLogo{
+        
+        height: 45px;
+        width: 50px;
+        margin-left: 25%;
+        
+    }
+  
+}

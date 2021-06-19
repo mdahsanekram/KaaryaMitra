@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kam Milega</title>
+ 
+    
+<link rel="stylesheet" href="css/Worker.css"  />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xl-12 col-md-12 col-sm-12  header">
+    
+    
+    </div>    
+</div>    
+    
+</div>
+
+    
+    
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xl-6 col-md-6 col-sm-6">
+    
+        <div>
+        
+            <img src="image/fimalyUser.jpg" class="worker" />
+        
+        </div>
+    
+    </div>   
+    
+    <div class="col-xl-6 col-md-6 col-sm-6 signUP">
+        <h3 class="text-center signUPTitle">SignUp as a User...</h3>
+          
+        <form>
+            
+              <div class="form-row">
+                  
+                 <div class="form-group col-md-6">
+                 
+                  <input type="text" class="form-control" id="fname" placeholder="Firstname">
+                </div>
+                  
+                <div class="form-group col-md-6">
+               
+                  <input type="text" class="form-control" id="lname" placeholder="Lastname">
+                </div>
+                  
+                          
+              <div class="form-group col-md-6">
+              
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+                  
+        
+              <div class="form-group col-md-6">
+               
+                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+              </div>
+                  
+                  
+                <div class="form-group col-md-6">
+                  
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                  
+                 <div class="form-group col-md-6">
+                 
+                  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+                  
+                  
+                 <div class="form-group col-md-12">
+                  <label for="inputState">Work Type</label>
+                  <select id="workType" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Raj Mistri</option>
+                    <option>Penter</option>
+                     <option>Pulmbar</option>
+                     <option>Badhai</option>
+                  </select>
+                </div>
+                  
+              </div>
+                
+                
+                
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="addressOne" placeholder="Address 1">
+              </div>
+                        
+                        
+                        
+              <div class="form-group">
+               
+                <input type="text" class="form-control" id="addressTwo" placeholder="Address 2">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="state" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Bihar</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="zipCode">
+                </div>
+              </div>
+            
+              <button class="btn btn-primary text-center signINButton"  onclick="signUpUser()">Sign in</button>
+                
+                <p class="text-center">Already have an account? <a href="#" >Log in</a></p>
+          </form>
+    </div>   
+</div>    
+    
+</div>
+    
+    
+    
+
+    
+    
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+
+
+<script></script>
+
+<script>
+function signUpUser()
+{
+
+  $(document).ready(function (){
+
+    let fname = $('#fname').val();
+    let lname = $('#lname').val();
+    let email = $('#email').val();
+    let mobile  = $('#mobile').val();
+    let password = $('#password').val();
+    let workType = $('#workType').val();
+    let addressOne = $('#addressOne').val();
+    let addressTwo = $('#addressTwo').val();
+    let city = $('#city').val();
+    let state = $('#state').val();
+    let pincode = $('#zipCode').val();
+
+    ///alert(fname+" "+lname+" "+email+" "+mobile+" "+password+" "+workType+" "+addressOne+" "+addressTwo+" "+city+" "+state+" "+pincode);
+    $.ajax({
+
+      url:"SignUpUser.php",
+      type:"post",
+      data:{
+      fname:fname,
+      lname:lname,
+      email:email,
+      mobile:mobile,
+      password:password,
+      workType:workType,
+      addressOne:addressOne,
+      addressTwo:addressTwo,
+      city:city,
+      state:state,
+      pincode:pincode
+      },
+      success:function(data,status)
+      {
+        alert(data);
+        
+      }
+
+
+    });
+  })
+  
+   
+}
+
+
+</script>
+</html>

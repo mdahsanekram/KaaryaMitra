@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaam Mitra</title>
+ 
+<link rel="icon"  href="image/KM2.jpg" />
+ 
+    
+<link rel="stylesheet" href="css/Login.css"  />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xl-12 col-md-12 col-sm-12  header">
+      
+        
+           
+     <h3 style="color: #0000FF " class="headerBAR"><img src="image/KM2.jpg" class="logoImage"/>&nbsp;&nbsp;<b>Kaarya<span style="color: #ED1C24 ">Mitra</span></b></h3>
+    
+    </div>    
+</div>    
+    
+</div>
+
+    
+    
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xl-6 col-md-6 col-sm-6 firstSec">
+    
+        <div>
+        
+            <img src="image/supervisor.jpg" class="worker" />
+        
+        </div>
+    
+    </div>   
+    
+    <div class="col-xl-6 col-md-6 col-sm-6 signUP">
+        <h3 class="text-center logimTitle">Login as a Supervisor...</h3>
+          
+        
+            <div class="LoginUserForm">
+              <div class="form-row">
+                  
+        
+              <div class="form-group col-md-12">
+               
+                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+              </div>
+                  
+                  
+                <div class="form-group col-md-12">
+                  
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  
+                  
+                
+                  
+              </div>
+                
+    
+            
+              <button class="btn btn-primary text-center signINButton"  onclick="signUpVendar()">Login</button>
+                
+                <p class="text-center">Already have an account? <a href="ForgatePassword.html" >Forgote Password</a></p>
+          
+                </div>
+                
+            </div>   
+</div>    
+    
+</div>
+    
+
+<div class="container-fluid copyRight">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12">
+        
+       
+            <p class="text-center pcopy">© 2020 Copyright:
+
+                    <strong> Kaarya Mitra.com</strong>
+
+                </p>
+        
+    
+        
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    
+</div>
+    
+
+    
+    
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+
+
+<script></script>
+
+<script>
+function signUpVendar()
+{
+   
+
+  $(document).ready(function (){
+
+   
+    let mobile  = $('#mobile').val();
+    let password = $('#password').val();
+  
+    
+    $.ajax({
+
+      url:"LoginSuperVisorValidation.php",
+      type:"post",
+      data:{
+      mobile:mobile,
+      password:password
+      },
+      success:function(data,status)
+      {
+        window.location.href="Home.php";
+        
+      }
+    });
+  })   
+}
+</script>
+</html>
